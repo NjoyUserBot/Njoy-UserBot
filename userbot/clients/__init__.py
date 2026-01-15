@@ -1,10 +1,10 @@
-# Man - UserBot
-# Copyright (c) 2022 Man-Userbot
-# Credits: @mrismanaziz || https://github.com/mrismanaziz
+# Njoy - UserBot
+# Copyright (c) 2022 Njoy-UserBot
+# Credits: @njoyproject || https://github.com/NjoyUserBot
 #
-# This file is a part of < https://github.com/mrismanaziz/Man-Userbot/ >
+# This file is a part of < https://github.com/NjoyUserBot/Njoy-UserBot/ >
 # t.me/SharingUserbot & t.me/Lunatic0de
 
 from .client_list import client_id, clients_list
-from .logger import man_userbot_on
-from .startup import man_client, multiman
+from .logger import Njoy_userbot_on
+from .startup import Njoy_client, multiman
