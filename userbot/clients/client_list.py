@@ -1,9 +1,9 @@
-# Man - UserBot
-# Copyright (c) 2022 Man-Userbot
-# Credits: @mrismanaziz || https://github.com/mrismanaziz
+# Njoy - UserBot
+# Copyright (c) 2022 Njoy-UserBot
+# Credits: @njoyproject || https://github.com/NjoyUserBot
 #
-# This file is a part of < https://github.com/mrismanaziz/Man-Userbot/ >
-# t.me/SharingUserbot & t.me/Lunatic0de
+# This file is a part of < https://github.com/NjoyUserBot/Njoy-UserBot/ >
+# t.me/Njoysupportbot
 
 from base64 import b64decode
 
@@ -54,11 +54,11 @@ async def client_id(event, botid=None):
     if botid is not None:
         uid = await event.client(GetFullUserRequest(botid))
         OWNER_ID = uid.user.id
-        MAN_USER = uid.user.first_name
+        NJOY_USER = uid.user.first_name
     else:
         client = await event.client.get_me()
         uid = telethon.utils.get_peer_id(client)
         OWNER_ID = uid
-        MAN_USER = client.first_name
-    man_mention = f"[{MAN_USER}](tg://user?id={OWNER_ID})"
-    return OWNER_ID, MAN_USER, man_mention
+        NJOY_USER = client.first_name
+    njoy_mention = f"[{NJOY_USER}](tg://user?id={OWNER_ID})"
+    return OWNER_ID, NJOY_USER, man_mention
